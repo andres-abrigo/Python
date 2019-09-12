@@ -14,4 +14,8 @@ with pymysql.connect(host= IP, port=port_number, user=user, passwd=password, db=
   dataframe_table = pandas_functions.dataframe_from_query(query, connection)
   print(dataframe_table.to_string())
   
+  output_excel_path = 'result.xlsx'
+  sheet_name = 'sql_table'
+
+  pandas_functions.save_dataframe_to_excel(dataframe_table,output_excel_path, sheet_name)
                            
