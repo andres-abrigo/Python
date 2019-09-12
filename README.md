@@ -1,5 +1,5 @@
 # Python
-Herramientas utilizadas basadas en Python
+Código basado en Python para interacción con base de datos y procesamiento de datos, entre otros.
 
 Archivos de Python con funciones genéricas:
 pandas_functions.py
