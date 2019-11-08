@@ -1,0 +1,3 @@
+import numpy as np    Importar módulo numpy como np
+
+np.array(lista)   Convierte una lista 
