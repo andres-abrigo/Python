@@ -1,3 +1,71 @@
-import numpy as np    Importar módulo numpy como np
+import numpy as np Importar módulo numpy como np
 
-np.array(lista)   Convierte una lista 
+np.array(lista) Convierte una lista en un ector numpy de datos
+
+variable_array + [escalar] Suma un escalar a un array completo
+
+np.array(lista, dtype='float') Crea un array de tipo float a partir de una lista
+
+variable_array.astype('int') Convierte un array a tipo entero
+
+variable_array.astype('object') Convierte un array a tipo genérico, se le puede ingresar cualquier tipo de dato
+
+variable_array.tolist() Convierte el array a una lista
+
+variable_array.shape Muestra la cantidad de filas y columnas del array
+
+variable_array.dtype Muestra el tipo de datos del array
+
+variable_array.size Muestra cuántos datos hay en cada dimensión del array
+
+variable_array.ndim Muestra la cantidad de dimensiones del array
+
+variable_array[:numero_filas, :numero_columnas] Extrae las primeras numero_filas filas y numero_columnas columnas
+
+condicion = variable_array > numero Genera un array booleano segun la condición especificada
+
+variable_array[condicion] Genera un array que toma los valores verdaderos de acuerdo a la condición en el array que se está trabajando
+
+variable_array[::-1, ] Invierte toda las posiciones de las filas
+
+variable_array[::-1, ::-1] Invierte todas las posiciones de las filas y de las columnas
+
+np.nan Not a number
+
+np.inf Infinito
+
+np.isnan(variable_array) Genera un array booleano según los elementos sean Not a Number
+
+np.isinf(variable_array) Genera un array booleano según los elementos sean infinitos
+
+variable_array.mean() Obtiene el promedio
+
+variable_array.max() Obtiene máximo del array completo
+
+variable_array.min() Obtiene el mínimo del array completo
+
+np.amin(variable_array, axis = 0) Obtiene el mínimo por columnas
+
+np.amin(variable_array, axis = 1) Obtiene el mínimo por filas
+
+np.cumsum(variable_array) Obtiene la suma acumulada
+
+variable_array_1 = variable_array_2.copy() Copia el array variable_array_2 en variable_array_1, los cambios en variable_array_2 no se reflejan en variable_array_1
+
+variable_array.reshape(numero_filas, numero_columnas) Cambia la forma de variable_array a numero_filas filas y numero_columnas columnas
+
+variable_array_1 = variable_array_2.flatten() Convierte el array en un array unidimensional plano, pero si se edita variable_array_2 se refleja el cambio en variable_array_1
+
+variable_array_1 = variable_array_2.ravel() Convierte el array en un array unidimensional plano, si se edita variable_array_2 NO se refleja el cambio en variable_array_1
+
+
+
+
+
+
+
+
+
+
+
+
