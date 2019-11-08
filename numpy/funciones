@@ -58,6 +58,32 @@ variable_array_1 = variable_array_2.flatten() Convierte el array en un array uni
 
 variable_array_1 = variable_array_2.ravel() Convierte el array en un array unidimensional plano, si se edita variable_array_2 NO se refleja el cambio en variable_array_1
 
+np.arange(numero) Secuencia desde cero hasta el número numero
+
+np.arange(numero_inicio,numero_termino) Secuencia desde numero_inicio hasta numero_termino
+
+np.arange(numero_inicio,numero_termino, paso) Secuencia desde numero_inicio hasta numero_termino con un paso entre números consecutivos
+
+np.arange(numero_inicio_mayor,numero_termino_menor, paso_negativo) Secuencia desde numero_inicio_mayor hasta numero_termino_menor con un paso_negativo entre números consecutivos lo hace decreciente
+
+np.linspace(start=numero_inicio, stop=numero_termino, num=numero_elementos, dtype = int) Secuencia de cantidad numero_elementos entre numero_inicio y numero_termino de tipo int
+
+np.set_printoptions(precision=cantidad_numeros_precision) Ajusta la precisión de números decimales a cantidad_numeros_precision dígitos
+
+np.ones([numero_filas, numero_colummnas]) Crea un array de unos con numero_filas cantidad de filas y numero_colummnas cantidad de columnas
+
+np.zeros([numero_filas, numero_colummnas]) Crea un array de ceros con numero_filas cantidad de filas y numero_colummnas cantidad de columnas
+
+np.tile(variable_array, cantidad_repeticiones) Crea un array que se compone de variable_array repetida cantidad_repeticiones veces
+
+np.repeat(variable_array, cantidad_repeticiones) Crea un array que repite cada uno de los elementos de variable_array cantidad_repeticiones veces
+
+np.random.rand(numero_filas, numero_columnas) Crea un array aleatorio de numero_filas filas y numero_columnas columnas
+
+np.random.randn(numero_filas, numero_columnas) Crea un array aleatorio con promedio 0 y varianza 1 de forma numero_filas filas y numero_columnas columnas
+
+
+
 
 
 
