@@ -82,6 +82,73 @@ np.random.rand(numero_filas, numero_columnas) Crea un array aleatorio de numero_
 
 np.random.randn(numero_filas, numero_columnas) Crea un array aleatorio con promedio 0 y varianza 1 de forma numero_filas filas y numero_columnas columnas
 
+np.random.randint(numero_menor, numero_mayor, size=[numero_filas, numero_columnas]) Crea un array aleatorio de numero_filas filas y numero_columnas columnas entre los numeros enteros numero_menor y numero_mayor
+
+np.random.random() Un numero aleatorio entre 0 y 1
+
+np.random.random(size=[numero_filas, numero_columnas[) Array aleatorio entre 0 y 1 de numero_filas filas y numero_columnas columnas
+
+np.random.choice(['a','e','i','o','u'], size = tamaño) Array formado por elecciones de la lista ingresada con tamaño en size
+
+np.random.choice(['a','e','i','o','u'], size = tamaño, p = [0.3, 0.1, 0.1, 04, 0.1]) Tomar opciones con probabilidad predefinida
+
+np.random.RandomState(numero) Crea la variable de estado random
+
+np.random.seed(numero) Configura la variable de estado random seed
+
+uniqs, counts = np.unique(arr_rand, return_counts = True) Obtener ítems únicos y sus conteos
+
+index_gt5 = np.where(array > 5) Entrega todas las posiciones que cumplen con la condición de ser menores que 5 (en este caso como ejemplo)
+
+array.take(index_gt5) Entrega todos los items de array que están en los índices de index_gt5 
+
+np.where(array > 5, 'gt5', 'le5') Se produce un array en base a las condiciones dadas como un if-else para la condición "array > 5"
+
+np.argmax(array) Obtiene la posición del número máximo del array
+
+np.argmin(array) Obtiene la posición del número mínimo del array
+
+np.set_printoptions(suppress = True) Desactiva la notación científica
+
+np.genfromtxt(path, delimiter=',', skip_header=1, filling_values=-999, dtype='float') Importa un archivo de texto rellenando con -999 si no es un valor de tipo float como se especificó
+
+np.genfromtext(path, delimiter = ',', skip_header= 1, dtype = 'object') Importa un archivo de texto que no se restrinje a un tipo de dato especifico
+
+np.genfromtext(path, delimiter = ',', skip_header= 1, dtype = 'None') Importa un archivo de texto que no se restrinje a un tipo de dato especifico
+
+np.savetxt('out.csv', data, delimiter), ",") Guarda datos de array a un archivo de texto segun extension indicada (en este caso un archivo .csv)
+
+np.save('myarray.npy', arr2d) Guardar un único array en archivo tipo .npy
+
+np.savez('array.npz', arr2d_f, arr2d_b) Guardar varios arraays en mismo archivo tipo .npy
+
+np.load('myarray.npy') Cargar archivo tipo .npy a memoria de programa actual
+
+np.load('array.npz') Cargar archivo de varios array guardados de tipo .npy a memoria de programa actual
+
+np.concatenate([a, b], axis = 0) Concatenar en forma vertical (a lo largo de las columnas)
+
+np.vstack([a,b]) Concatenar en forma vertical (a lo largo de las columnas)
+
+np.r_[a,b] Concatenar en forma vertical (a lo largo de las columnas)
+
+np.concatenate([a,b], axis=1) Concatenar de forma horizontal (a lo largo de las filas)
+
+np.hstack([a,b]) Concatenar de forma horizontal (a lo largo de las filas)
+
+np.c_[a,b] Concatenar de forma horizontal (a lo largo de las filas)
+
+np.r_[[1,2,3], 0, 0, [4,5,6]] Estructuras complejas para arrays 1d
+
+np.sort(array, axis=0) Ordena todos los elementos del array, sin importar su distribución de filas y columnas
+ 
+ 
+
+
+
+
+
+
 
 
 
